@@ -1,0 +1,45 @@
+{% extends 'dashboard/base_dash.html' %}
+{% load staticfiles %}
+{% block dash_block %}
+  <link rel="stylesheet" href="{% static 'excel/css/table.css' %}">
+    <div class="section__content section__content--p30">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="table-responsive table-wrapper-scroll-y table--no-card m-b-30">
+              <table class="table table-borderless table-striped table-earning">
+                <thead class="text-center">
+                  <tr>
+                    <th>S.NO.</th>
+                    <th>Lic.No</th>
+                    <th>Issuance Lic Date</th>
+                    <th>File No</th>
+                    <th>IEC</th>
+                    <th>Party Name</th>
+                    <th>LIC category</th>
+                    <th>FOB in RS.</th>
+                    <th>CIF/Duty Credit in Rs.</th>
+                  </tr>
+                </thead>
+                <tbody class="text-center">
+                  {% for tab in tabs %}
+                    <tr>
+                      <th>{{ tab.id }}</th>
+                      <th>{{ tab.licno }}</th>
+                      <th>{{ tab.ild }}</th>
+                      <th>{{ tab.fno }}</th>
+                      <th>{{ tab.iec }}</th>
+                      <th>{{ tab.pname }}</th>
+                      <th>{{ tab.lic }}</th>
+                      <th>Rs.{{ tab.fob }}</th>
+                      <th>Rs.{{ tab.cif }}</th>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endblock %}

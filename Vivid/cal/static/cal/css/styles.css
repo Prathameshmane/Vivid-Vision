@@ -1,0 +1,131 @@
+/* Common styles */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.au-card{
+  padding: 0;
+}
+.clearfix {
+  margin: 15px;
+}
+.form {
+  margin: auto;
+}
+.form input:focus, .form select:focus, .form textarea:focus{
+  background-color: #f7f7f7;
+}
+.form input, .form select, .form textarea {
+  border-radius: 5px;
+  border-bottom: 1px solid green;
+  padding: 5px;
+  width: 100%;
+}
+.btn-primary{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* App styles */
+.title {
+  text-align: center;
+  margin: 10px;
+}
+
+.calendar{
+  width: 98%;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.calendar tr, .calendar td {
+  border: 1px solid green;
+}
+
+.calendar th {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  color: green;
+}
+.calendar tr:nth-child(2){
+  border-bottom: 1px solid green;
+}
+.calendar td {
+  width: 150px;
+  height: 150px;
+  padding: 20px 0px 0px 5px;
+}
+
+.month {
+  font-size: 25px;
+}
+
+.date {
+  font-size: 16px;
+}
+
+ul {
+  height: 100%;
+  padding: 0px 5px 0px 20px;
+}
+
+a {
+  color: #17a2b8;
+}
+@media(min-width: 992px){
+  .center{
+   width: 91%;
+  }
+}
+@media(min-width: 768px) and (max-width: 991px){
+  .center {
+      width: 88%;
+  }
+}
+@media(min-width: 575px) and (max-width: 767px){
+  .center {
+      width: 84%;
+  }
+}
+@media(min-width: 480px) and (max-width: 574px){
+  .center {
+      width: 80%;
+  }
+  .calendar th{
+    font-size: 14px;
+  }
+  .form {
+    margin: 17px;
+  }
+}
+@media (min-width:450px) and (max-width: 479px){
+  .center {
+      width: 79%;
+  }
+  .calendar th{
+    font-size: 14px;
+  }
+  .form {
+    margin: 17px;
+  }
+}
+@media(max-width: 449px){
+  .center {
+      width: 65%;
+  }
+  .calendar th{
+    font-size: 14px;
+  }
+.section__content  .container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  th label{
+    font-size: 12px;
+  }
+  .au-card {
+    padding: 10px;
+  }
+}

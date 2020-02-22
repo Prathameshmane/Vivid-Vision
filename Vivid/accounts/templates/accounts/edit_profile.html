@@ -1,0 +1,51 @@
+{% extends 'dashboard/base_dash.html' %}
+{% load bootstrap4 %}
+{% load staticfiles %}
+  {% block dash_block %}
+
+  <!-- Row -->
+  <div class="row m-0">
+    <!-- Column -->
+    <div class="col-lg-4 col-xlg-3 col-md-5">
+        <div class="card">
+            <div class="card-body">
+                <center class="m-t-30"> <img src="{% static 'img/1.png' %}" class="img-circle" width="130" />
+                  <h4 class="card-title m-t-10">{{ user.username }}</h4>
+                  <h6 class="card-subtitle"></h6>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- Column -->
+    <!-- Column -->
+    <div class="col-lg-8 col-xlg-9 col-md-7">
+        <div class="card">
+            <!-- Tab panes -->
+            <div class="card-body">
+        <form id="log" method="POST" data-aos="zoom-in">
+        {% csrf_token %}
+        {% if form.errors %}
+          <div class="alert alert-warning alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <p>Your Form Has Errors...</p>
+            {% for field in form %}
+              {% if field.errors %}
+                {{ field.errors }}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% bootstrap_form form %}
+        <input type="submit" class="btn btn-primary" name="Edit Profile" value="Edit Profile">
+      </form>
+    </div>
+</div>
+</div>
+<!-- Column -->
+</div>
+<!-- Row -->
+
+
+{% endblock %}

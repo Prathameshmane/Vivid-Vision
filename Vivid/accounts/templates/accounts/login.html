@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load bootstrap4 %}
+{% load staticfiles %}
+
+  {% block content %}
+  <link rel="stylesheet" type="text/css"href="{% static "accounts/css/login.css" %}">
+  <div class="container-fluid bg">
+    <div class="row clearfix">
+      <div class="col-lg-4 col-md-4 col-sm-1 col-xs-12"></div>
+      <div class="col-lg-4 col-md-4 col-sm-10 col-xs-12">
+        <form id="log" method="POST" data-aos="zoom-in">
+          <h3 class="text-center">Login Form</h3>
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          <div class="form-group text-center">
+            <button class="btn btn-block btn-success" type="submit" value="Login">Login</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-1 col-xs-12"></div>
+    </div>
+  </div>
+  {% endblock %}

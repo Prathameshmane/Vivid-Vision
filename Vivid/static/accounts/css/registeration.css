@@ -1,0 +1,109 @@
+#log .ReginputBox{
+    background: transparent;
+    border-radius: 15px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    height: 40px;
+    color: white;
+}
+#log{
+    margin: 0;
+    padding:20px;
+    -webkit-box-shadow: -1px 1px 60px 10px black;
+    -moz-box-shadow: -1px 1px 60px 10px black;
+    box-shadow: -1px 1px 60px 10px black;
+    background: rgba(0,0,0,0.4);
+}
+.bg label {
+    font-weight: normal;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif !important;
+    font-size: 19px;
+}
+.row h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+@media(min-width: 992px){
+    h1{
+      font-size: 30px;
+    }
+    .bg label{
+      font-size: 16px;
+      color: white;
+      letter-spacing: 0.5px;
+    }
+    .text-white{
+      font-size: 14px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  h1{
+    font-size: 28px;
+  }
+  .bg label{
+    font-size: 17px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  .text-white{
+    font-size: 10px;
+  }
+}
+@media(min-width: 575px) and (max-width: 767px){
+  h1{
+    font-size: 25px;
+  }
+  .bg label{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  .text-white{
+    font-size: 10px;
+  }
+}
+@media(min-width: 480px) and (max-width: 574px){
+  h1{
+    font-size: 25px;
+  }
+  .bg label{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  .text-white{
+    font-size: 10px;
+  }
+}
+
+@media (min-width:450px) and (max-width: 479px){
+  h1{
+    font-size: 25px;
+  }
+  .bg label{
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  .text-white{
+    font-size: 10px;
+  }
+}
+@media(max-width: 449px){
+  h1{
+    font-size: 25px;
+  }
+  .bg label{
+    font-size: 15px;
+    color: white;
+      letter-spacing: 0.5px;
+  }
+  .text-white{
+    font-size: 10px;
+  }
+}

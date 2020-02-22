@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #666;
+    background-color: #f9f9f9;
+}
+button {
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1em;
+    cursor: pointer;
+}
+button.info {
+    background: #538fcd;
+    color: #fff;
+}
+.area-buttons {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#myCalendar{
+  width: 100%;
+}
+.vanilla-calendar-week span{
+  background-color: #fff;
+  color: green !important;
+}
+.vanilla-calendar-date span{
+  padding-top: 10%;
+}
+.vanilla-calendar-date--selected {
+    background-color: white !important;
+    color: black !important;
+    border: 1px blue solid;
+}
+
+.vanilla-calendar-week{
+  border-bottom: green 1px dotted;
+}
+.vanilla-calendar-header__label{
+  color: green;
+}
+.vanilla-calendar-body{
+  height: 415px;
+}
+footer{
+    position: fixed;
+    width: 85%;
+}
+.au-card{
+  height: 560px;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+}
+@media (max-width: 400px) {
+  .vanilla-calendar .vanilla-calendar-week span{
+    font-size: 10px !important;
+  }
+}

@@ -1,0 +1,109 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+section .somke{
+	height: 100vh;
+	background: #000;
+	background-size: cover;
+}
+h1{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+  left: 0%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	color: #fff;
+	font-size: 5em;
+	font-family: sans-serif;
+	letter-spacing: 0.2em;
+
+}
+h1 span{
+	opacity: 0;
+	display: inline-block;
+	animation: animate 1s linear forwards;
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: rotateY(90deg);
+		filter: blur(10px);
+	}
+	100%{
+		opacity: 1;
+		transform: rotateY(0deg);
+		filter: blur(0);
+	}
+}
+h1 span:nth-child(1){
+	animation-delay: 0.8s;
+}
+h1 span:nth-child(2){
+	animation-delay: 1s;
+}
+h1 span:nth-child(3){
+	animation-delay: 1.2s;
+}
+h1 span:nth-child(4){
+	animation-delay: 1.4s;
+}
+h1 span:nth-child(5){
+	animation-delay: 1.6s;
+}
+h1 span:nth-child(6){
+	animation-delay: 1.85s;
+}
+h1 span:nth-child(7){
+	animation-delay: 2s;
+}
+h1 span:nth-child(8){
+	animation-delay: 2.2s;
+}
+h1 span:nth-child(9){
+	animation-delay: 2.4s;
+}
+h1 span:nth-child(10){
+	animation-delay: 2.6s;
+}
+h1 span:nth-child(11){
+	animation-delay: 2.8s;
+}
+h1 span:nth-child(12){
+	animation-delay: 3s;
+}
+@media(min-width: 992px){
+    h1{
+      font-size: 4.5em;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991px){
+  h1{
+    font-size: 3.3em;
+  }
+}
+@media(min-width: 575px) and (max-width: 767px){
+  h1{
+    font-size: 2.5em;
+  }
+}
+@media(min-width: 480px) and (max-width: 574px){
+  h1{
+    font-size: 2em;
+  }
+}
+
+@media (min-width:450px) and (max-width: 479px){
+  h1{
+    font-size: 1.7rem;
+  }
+}
+@media(max-width: 449px){
+  h1{
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,40 @@
+.bg #log .inputBox{
+    background: transparent;
+    border-radius: 0px;
+    border: 0px;
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-top: 0;
+    height: 40px;
+    color: white;
+}
+.bg #log{
+     padding:60px 40px;
+    -webkit-box-shadow: -1px 1px 60px 10px black;
+    -moz-box-shadow: -1px 1px 60px 10px black;
+    box-shadow: -1px 1px 60px 10px black;
+    font-family: 'Lexend Deca', sans-serif !important;
+    background: rgba(0,0,0,0.4);
+}
+.bg .row h3{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif !important;
+
+}
+.bg label{
+    font-weight: normal;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif !important;
+    font-size: 19px;
+
+}
+.bg .opt option{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif !important;
+}

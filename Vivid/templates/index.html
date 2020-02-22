@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<link rel="stylesheet" type="text/css" href="{% static "css/index_style.css" %}">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <section>
+    <div class="smoke">
+      <h1>
+        <span>V</span>
+        <span>I</span>
+        <span>V</span>
+        <span>I</span>
+        <span>D</span>
+        <span>-</span>
+        <span>V</span>
+        <span>I</span>
+        <span>S</span>
+        <span>I</span>
+        <span>O</span>
+        <span>N</span>
+      </h1>
+    </div>
+  </section>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript">
+    AOS.init();
+    setTimeout(function() {
+      window.location.href = "{% url 'accounts:login' %}";},
+      4500);
+    </script>
+{% endblock %}

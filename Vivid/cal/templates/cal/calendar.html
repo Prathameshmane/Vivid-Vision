@@ -1,0 +1,23 @@
+{% extends 'dashboard/base_dash.html' %}
+{% load staticfiles %}
+  {% block dash_block %}
+  <link rel="stylesheet" type="text/css" href="{% static 'cal/css/styles.css' %}">
+  <div class="section__content section__content--p30">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="au-card">
+            <div class="clearfix">
+              	<a class="btn btn-default left" href="{% url 'cal:calendar' %}?{{ prev_month }}"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+              	<a class="btn btn-default right" href="{% url 'cal:calendar' %}?{{ next_month }}"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+              	<a class="btn btn-success center" href="{% url 'cal:event_new' %}"> New Event </a>
+            </div>
+            <div class="container-fluid">
+            {{ calendar }}
+            </div>
+          </div><!-- .col -->
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
